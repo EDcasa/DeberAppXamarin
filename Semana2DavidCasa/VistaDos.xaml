@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2DavidCasa.VistaDos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#1177d1" Padding="10" CornerRadius="5">
+                <Label Text="Universidad Israel" HorizontalTextAlignment="Start" TextColor="White" FontSize="24"/>
+                <Label x:Name="lblUser" HorizontalTextAlignment="End" TextColor="White" FontSize="24"/>
+            </Frame>
+            <Label Text="Seguimiento 1" TextColor="#1177d1" HorizontalTextAlignment="Center" FontSize="20"></Label>
+            <Entry x:Name="txtSeguimiento" Placeholder="Nota de seguimiento 1" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtExamen" Placeholder="Examen 1"  Keyboard="Numeric"></Entry>
+            <Label x:Name="lblNotaParcial" Text="Nota Parcial 1" HorizontalTextAlignment="Center" FontSize="20" Margin="20"></Label>
+
+            <Label Text="Seguimiento 2" TextColor="#1177d1" HorizontalTextAlignment="Center" FontSize="20"></Label>
+            <Entry x:Name="txtSeguimientoDos" Placeholder="Nota de seguimiento 2" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtExamenDos" Placeholder="Examen 2"  Keyboard="Numeric"></Entry>
+            <Label x:Name="lblNotaParcialDos" Text="Nota Parcial 2" HorizontalTextAlignment="Center" FontSize="20" Margin="20"></Label>
+
+            <Label x:Name="lblNotaFinal" Text="Nota Final" HorizontalTextAlignment="Center" FontSize="20" Margin="20" TextColor="DarkRed"></Label>
+            <Label x:Name="lblEstado" Text="Estado" HorizontalTextAlignment="Center" FontSize="20" Margin="20" TextColor="DarkRed"></Label>
+            <Button x:Name="BtnCalcular" Text="Calcular" Clicked="BtnCalcular_Clicked"  CornerRadius="5" WidthRequest="10" HeightRequest="65"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

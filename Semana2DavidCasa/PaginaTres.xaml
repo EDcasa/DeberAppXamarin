@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2DavidCasa.PaginaTres">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#1177d1" Padding="10" CornerRadius="5">
+                <Label Text="Iniciar sesion" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+            </Frame>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario">
+            </Entry>
+            <Entry x:Name="txtClave" Placeholder="Ingrese su clave" IsPassword="True"></Entry>
+            
+            <Button x:Name="BtnIniciarSesion" Text="Iniciar sesion" Clicked="BtnIniciarSesion_Clicked"  CornerRadius="5" WidthRequest="10" HeightRequest="65"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
